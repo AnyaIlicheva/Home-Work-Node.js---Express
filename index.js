@@ -39,7 +39,7 @@ app.get('/about', (req, res) => {
   counter['/about']++;
   writeCounter(counter);
   res.send(`<h1>О нас</h1>
-    <a href="/">Перейти на страницу Index</a><p>Просмотров: ${counter['/about']}</p>`);
+    <a href="/">Перейти на страницу /</a><p>Просмотров: ${counter['/about']}</p>`);
 });
 app.listen(port, () => {
   console.log(`Сервер запущен на порту ${port}`);
