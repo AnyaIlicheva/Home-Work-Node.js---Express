@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
   counter['/']++;
   writeCounter(counter);
   res.send(`<h1>Главная страница</h1>
-    <a href="/about">Перейти на страницу About</a><p>Просмотров: ${counter['/']}</p>`);
+    <a href="/about">Перейти на страницу /about</a><p>Просмотров: ${counter['/']}</p>`);
 });
 // Обработчик для страницы "/about"
 app.get('/about', (req, res) => {
